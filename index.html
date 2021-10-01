@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--============================ META TAGS START ============================-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="description" content="Creating Responsive Web Sites " />
+	<meta name="keywords" content="HTML, CSS, Responsive Templates" />
+	<meta name="author" content="Abdullayeva Ofeliya" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--============================ META TAGS END ==============================-->
+
+	<!-- ============================ Bootstrap START ==================================-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--============================ bootstrap End ================================== -->
+
+	<!--============================ CSS START ==================================-->
+	<link rel="stylesheet" type="text/css" href="/style.css" />
+	<!--============================ CSS END ====================================-->
+
+	<!--============================ FONT AWESOME 5.15.3 START ====================-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<!--============================ FONT AWESOME 5.15.3 END     ======================-->
+
+	<title>Film Projesi</title>
+</head>
+
+<body>
+
+    <div class="container " style="margin-top: 20px;">
+        <div class="card row">
+            <div class="card-header bg-success text-light">Film Projesi</div>
+            <div class="card-body">
+                <form id="film-form" name="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input class="form-control" type="text" placeholder="Film adı" id="title">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <input class="form-control" type="text" id="director"
+                            placeholder="Yönetmen">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <input class="form-control" type="text"  placeholder="Film afiş Linki" id="url">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Film əlavə et</button>
+                </form>
+            </div>
+
+            <div class="card-body">
+                <hr>
+                <h5 class="card-title" id="films-title">Filmlər
+                </h5>
+                <hr>
+                <table class="table table-success">
+                    <thead class="">
+                        <tr>
+                            <th scope="col">Film Afişi</th>
+                            <th scope="col">Film adı</th>
+                            <th scope="col">Yönetmən</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="films">
+                        <!-- <tr>
+                            <td><img src="
+                                "/>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#" id="delete-film"></a></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <hr>
+                <a id="clear-films" class="btn btn-success text-light">Bütün filmləri təmizləyin </a>
+            </div>
+        </div>
+    </div>
+
+	<!-- ============================ JAVASCRIPT START ==========================-->
+    <script src="film.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+	<script src="script.js"></script>
+	<!-- ============================ JAVASCRIPT END ============================-->
+</body>
+
+</html>
