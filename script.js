@@ -23,13 +23,19 @@ function addFilm(e){
 
     if (title === ""  || director === ""  || url === ""){
         //hata
+        ui.displayMessages("Tüm alanları doldurun...","danger")
     }
     else{
         const newFilm = new Film(title,director,url);
 
-        ui.addFilmToUI(newFilm); //
+        ui.addFilmToUI(newFilm); //liste film elave etme
+
+        ui.displayMessages("Film uğurla əlavə edildi","success")
         
     }
+
+
+    ui.clearInputs(titleElement,urlElement,directorElement);
 
     e.preventDefault();
 }
