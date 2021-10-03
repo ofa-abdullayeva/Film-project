@@ -55,6 +55,10 @@ function addFilm(e){
  }
 
  function clearAllFilms(){
-    ui.clearAllFilmsFromUI();
-     
+
+    if (confirm("Emin misiniz ?")){
+       ui.clearAllFilmsFromUI(); 
+    }
+    
+
  }
