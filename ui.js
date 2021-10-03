@@ -38,3 +38,17 @@ UI.prototype.displayMessages = function(message,type){
         div.remove();
     },2000)
 }
+
+UI.prototype.deleteFilmFromUI = function(element){
+    element.parentElement.parentElement.remove();
+}
+
+UI.prototype.clearAllFilmsFromUI= function(element){
+    const filmList = document.getElementById("films");
+
+    filmList.innerHTML = ""
+
+    // while(filmList.firstElementChild !== null){
+    //     filmList.firstElementChild.remove();
+    // }
+}
